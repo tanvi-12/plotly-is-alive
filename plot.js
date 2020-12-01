@@ -24,7 +24,10 @@ d3.json("data/data.json").then((incomingData) => {
   var trace = {
     x: titles,
     y: ratings,
-    type: "bar"
+    type: "bar",
+    marker: {
+      color: "pink"
+    }
   };
 
   // Create the data array for our plot
